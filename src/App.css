@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  background-color: #5b72f3; /* Colore di sfondo del bottone */
+  color: white; /* Colore del testo */
+  padding: 10px 20px; /* Spaziatura interna del bottone */
+  border: none; /* Rimuove il bordo del bottone */
+  cursor: pointer; /* Cambia il cursore quando il mouse passa sopra il bottone */
+  border-radius: 5px; /* Angoli arrotondati */
+}
+
