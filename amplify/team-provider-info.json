@@ -14,6 +14,15 @@
     "categories": {
       "auth": {
         "maseappea5eb257": {}
+      },
+      "function": {
+        "graphQlLambdaAuthorizer04cf0e6d": {
+          "deploymentBucketName": "amplify-maseapp-staging-151531-deployment",
+          "s3Key": "amplify-builds/graphQlLambdaAuthorizer04cf0e6d-54434f6a784b63777143-build.zip"
+        }
+      },
+      "api": {
+        "MaseAPP": {}
       }
     }
   }

@@ -1,4 +1,28 @@
 {
+  "api": {
+    "MaseAPP": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDate": "2024-03-02T09:26:25.050Z",
+              "apiKeyExpirationDays": 365,
+              "description": "api key description"
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
   "auth": {
     "maseappea5eb257": {
       "customAuth": false,
@@ -23,6 +47,31 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "graphQlLambdaAuthorizer04cf0e6d": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_graphQlLambdaAuthorizer04cf0e6d_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "graphQlLambdaAuthorizer04cf0e6d"
+        }
+      ]
+    },
+    "AMPLIFY_function_graphQlLambdaAuthorizer04cf0e6d_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "graphQlLambdaAuthorizer04cf0e6d"
+        }
+      ]
     }
   }
 }
